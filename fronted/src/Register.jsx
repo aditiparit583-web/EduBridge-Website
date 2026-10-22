@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://edubridge-backend-new.onrender.com/api/auth";
 
 export default function Register() {
   const [form, setForm] = useState({

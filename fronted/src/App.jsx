@@ -111,12 +111,12 @@ function App() {
       setLoading(true);
 
       const response = await fetch(
-        "https://edubridge-website.onrender.com/api/auth/login",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
+"https://edubridge-backend-new.onrender.com/api/auth/login",
+{
+method: "POST",
+headers: {
+"Content-Type": "application/json",
+},
           body: JSON.stringify({
             email: email.trim(),
             password,
