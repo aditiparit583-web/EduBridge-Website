@@ -1,0 +1,23 @@
+node_modules/
+.env
+dist/
+.DS_Store
+# Environment files and secrets
+.env.*
+!.env.example
+backend/.env
+fronted/.env
+
+# Dependencies and build files
+backend/node_modules/
+fronted/node_modules/
+fronted/dist/
+
+# Temporary test and backup files
+backend/resetTestPasswords.js
+backupHome.jsx
+fronted/src/App_backup.jsx
+
+# Logs
+*.log
+backend/resetTestPasswords.js

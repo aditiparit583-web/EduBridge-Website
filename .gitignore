@@ -1,0 +1,23 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+.DS_Store
+
+# Backend
+backend/.env
+backend/node_modules/
+
+# Frontend
+fronted/.env
+fronted/node_modules/
+fronted/dist/
+
+# Temporary test and backup files
+backend/resetTestPasswords.js
+backupHome.jsx
+fronted/src/App_backup.jsx
+
+# Logs
+*.log
