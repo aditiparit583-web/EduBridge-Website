@@ -21,7 +21,7 @@ function ExamManagement({ onBack }) {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:5000/api/exams");
+      const response = await fetch("https://edubridge-backend-new.onrender.com/api/exams");
       const data = await response.json();
 
       if (!response.ok) {
@@ -69,8 +69,8 @@ function ExamManagement({ onBack }) {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/exams/${editingId}`
-        : "http://localhost:5000/api/exams";
+        ? `https://edubridge-backend-new.onrender.com/api/exams/${editingId}`
+        : "https://edubridge-backend-new.onrender.com/api/exams";
 
       const method = editingId ? "PUT" : "POST";
 
@@ -140,7 +140,7 @@ function ExamManagement({ onBack }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/exams/${id}`,
+        `https://edubridge-backend-new.onrender.com/api/exams/${id}`,
         {
           method: "DELETE",
         }

@@ -21,7 +21,7 @@ function TeacherManagement({ onBack }) {
   const fetchTeachers = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/teachers"
+        "https://edubridge-backend-new.onrender.com/api/teachers"
       );
 
       const data = await response.json();
@@ -69,8 +69,8 @@ function TeacherManagement({ onBack }) {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/teachers/${editingId}`
-        : "http://localhost:5000/api/teachers";
+        ? `https://edubridge-backend-new.onrender.com/api/teachers/${editingId}`
+        : "https://edubridge-backend-new.onrender.com/api/teachers";
 
       const response = await fetch(url, {
         method: editingId ? "PUT" : "POST",
@@ -138,7 +138,7 @@ setMessage("");
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/teachers/${id}`,
+        `https://edubridge-backend-new.onrender.com/api/teachers/${id}`,
         {
           method: "DELETE",
         }

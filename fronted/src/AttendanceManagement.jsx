@@ -26,7 +26,7 @@ function AttendanceManagement({ onBack }) {
   const fetchAttendance = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/attendance",
+        "https://edubridge-backend-new.onrender.com/api/attendance",
         { headers: getHeaders() }
       );
 
@@ -74,8 +74,8 @@ function AttendanceManagement({ onBack }) {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/attendance/${editingId}`
-        : "http://localhost:5000/api/attendance";
+        ? `https://edubridge-backend-new.onrender.com/api/attendance/${editingId}`
+        : "https://edubridge-backend-new.onrender.com/api/attendance";
 
       const response = await fetch(url, {
         method: editingId ? "PUT" : "POST",
@@ -131,7 +131,7 @@ function AttendanceManagement({ onBack }) {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/attendance/${id}`,
+        `https://edubridge-backend-new.onrender.com/api/attendance/${id}`,
         {
           method: "DELETE",
           headers: getHeaders(),

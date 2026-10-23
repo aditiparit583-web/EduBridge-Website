@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://edubridge-backend-new.onrender.com/api";
 
 const modules = [
   { key: "attendance", title: "Child's Attendance", endpoint: "/attendance/my" },

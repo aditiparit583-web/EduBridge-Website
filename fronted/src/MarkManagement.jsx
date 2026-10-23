@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api/marks";
+const API = "https://edubridge-backend-new.onrender.com/api/marks";
 
 const initialForm = {
   studentName: "",

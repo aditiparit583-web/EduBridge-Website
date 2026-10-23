@@ -81,7 +81,7 @@ function StudentManagement({ onBack }) {
         throw new Error("Login session not found. Please log in again.");
       }
 
-      const response = await fetch("http://localhost:5000/api/students", {
+      const response = await fetch("https://edubridge-backend-new.onrender.com/api/students", {
         method: "GET",
         headers: getHeaders(),
       });
@@ -165,7 +165,7 @@ function StudentManagement({ onBack }) {
         delete payload.password;
       }
 
-      const response = await fetch("http://localhost:5000/api/students", {
+      const response = await fetch("https://edubridge-backend-new.onrender.com/api/students", {
         method: "POST",
         headers: getHeaders(true),
         body: JSON.stringify(payload),
@@ -254,7 +254,7 @@ function StudentManagement({ onBack }) {
     }
 
     const response = await fetch(
-      `http://localhost:5000/api/students/${editingStudentId}`,
+      `https://edubridge-backend-new.onrender.com/api/students/${editingStudentId}`,
       {
         method: "PUT",
         headers: getHeaders(true),
@@ -294,7 +294,7 @@ function StudentManagement({ onBack }) {
       setMessage("");
 
       const response = await fetch(
-        `http://localhost:5000/api/students/${studentId}`,
+        `https://edubridge-backend-new.onrender.com/api/students/${studentId}`,
         {
           method: "DELETE",
           headers: getHeaders(),

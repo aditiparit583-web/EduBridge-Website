@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api";
+const API = "https://edubridge-backend-new.onrender.com/api";
 
 function StudentDashboard({ user, onLogout }) {
 const [activeModule, setActiveModule] = useState("");

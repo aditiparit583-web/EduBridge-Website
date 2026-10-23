@@ -21,7 +21,7 @@ function StudyMaterialManagement({onBack})
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:5000/api/study-materials",
+      "https://edubridge-backend-new.onrender.com/api/study-materials",
       {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -58,8 +58,8 @@ function StudyMaterialManagement({onBack})
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/study-materials/${editingId}`
-        : "http://localhost:5000/api/study-materials";
+        ? `https://edubridge-backend-new.onrender.com/api/study-materials/${editingId}`
+        : "https://edubridge-backend-new.onrender.com/api/study-materials";
 
       const method = editingId ? "PUT" : "POST";
 
@@ -128,7 +128,7 @@ function StudyMaterialManagement({onBack})
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/study-materials/${id}`,
+        `https://edubridge-backend-new.onrender.com/api/study-materials/${id}`,
         {
           method: "DELETE",
         }

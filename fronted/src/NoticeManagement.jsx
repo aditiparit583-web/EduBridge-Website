@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:5000/api/notices";
+const API = "https://edubridge-backend-new.onrender.com/api/notices";
 
 function NoticeManagement({ onBack }) {
   const [notices, setNotices] = useState([]);

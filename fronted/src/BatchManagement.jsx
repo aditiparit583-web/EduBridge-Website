@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = "https://edubridge-backend-new.onrender.com/api";
 
 function BatchManagement({ onBack }) {
   const [batches, setBatches] = useState([]);
